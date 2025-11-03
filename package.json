@@ -1,22 +1,22 @@
 {
-  "name": "traning",
-  "version": "1.0.0",
-  "description": "",
+  "name": "vue-pr",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "clean": "rimraf dist",
-    "prestart": "npm run clean && npm run build",
-    "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0"
+    "vue": "^3.5.22"
   },
   "devDependencies": {
-    "@types/node": "^20.x",
-    "typescript": "^4.0.0",
-    "rimraf": "^5.0.0"
-  },
-  "main": "dist/src/{index.js,functions/*.js}"
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.11",
+    "vite-plugin-vue-devtools": "^8.0.3"
+  }
 }
